@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Order Page</title>
+	<meta charset="utf-8">        
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/customerPage.css}">
+</head>
+<body>
+    <nav>
+        <a href="#" id="userImg"><ion-icon name="contact"></ion-icon></a>
+        <a href="#">More Info</a>
+        <a href="#">Update Info</a>
+        <span th:text="${user.access}"></span>
+    </nav>
+    
+    <div class="welcomeCustomer">
+        <span><i th:text="${greetUser}"></i> <strong th:text="${user.firstName}"></strong></span>
+        <form method="get" action="#" th:action="@{/logout}">
+            <input type="submit" value="Logout">
+        </form>
+    </div>
+    <form method="post" action="#" id="allMenu">
+        <div class="breakfast">
+            <h2> - Breakfast -</h2>
+            <div class="menu">
+                <div class="food">
+                    <h3>Pain aux oeufs</h3>
+                    <img th:src="@{/img/b1.jpg}" alt="Breakfast 1">
+                    <i>120 Calories</i>
+                    <h4>$9</h4>
+                    <input type="number" value="0">
+                </div>
+                <div class="food">
+                    <h3>CREPES AU MIEL</h3>
+                    <img th:src="@{/img/b2.jpg}" alt="Breakfast 2">
+                    <i>153 Calories</i>
+                    <h4>$10</h4>
+                    <input type="number" value="0">
+                </div>
+                <div class="food">
+                    <h3>SALADE SIMPLE</h3>
+                    <img th:src="@{/img/b3.jpg}" alt="Breakfast 3">
+                    <i>80 Calories</i>
+                    <h4>$11</h4>
+                    <input type="number" value="0">
+                </div>
+                <div class="food">
+                    <h3>SALADE DE FRUITS</h3>
+                    <img th:src="@{/img/b4.jpg}" alt="Breakfast 4">
+                    <i>70 Calories</i>
+                    <h4>$7</h4>
+                    <input type="number" value="0">
+                </div>
+                <div class="food">
+                    <h3>TOMATES A L'AVOCAT</h3>
+                    <img th:src="@{/img/b5.jpg}" alt="Breakfast 5">
+                    <i>98 Calories</i>
+                    <h4>$10</h4>
+                    <input type="number" value="0">
+                </div>
+            </div>
+        </div>
+
+        <div class="dinner">
+            <h2> - Dinner -</h2>
+            <div class="menu">
+                <div class="food">
+                    <h3>TARTE DE LEGUMES</h3>
+                    <img th:src="@{/img/1.jpg}" alt="Dinner 1">
+                    <i>122 Calories</i>
+                    <h4>$15</h4>
+                    <input type="number" value="0">
+                </div>
+                <div class="food">
+                    <h3>SOUPE DE RIZ</h3>
+                    <img th:src="@{/img/2.jpg}" alt="Dinner 2">
+                    <i>103 Calories</i>
+                    <h4>$18</h4>
+                    <input type="number" value="0">
+                </div>
+                <div class="food">
+                    <h3>MINI PIZZA</h3>
+                    <img th:src="@{/img/3.jpg}" alt="Dinner 3">
+                    <i>194 Calories</i>
+                    <h4>$12</h4>
+                    <input type="number" value="0">
+                </div>
+                <div class="food">
+                    <h3>SALADE DE POULET</h3>
+                    <img th:src="@{/img/4.jpg}" alt="Dinner 4">
+                    <i>79 Calories</i>
+                    <h4>$21</h4>
+                    <input type="number" value="0">
+                </div>
+                <div class="food">
+                    <h3>OEUFS FRIS</h3>
+                    <img th:src="@{/img/5.jpg}" alt="Dinner 5">
+                    <i>148 Calories</i>
+                    <h4>$13</h4>
+                    <input type="number" value="0">
+                </div>
+            </div>
+            <hr>
+            <div class="menu">
+                <div class="food">
+                    <h3>PILI PILI</h3>
+                    <img th:src="@{/img/6.jpg}" alt="Dinner 6">
+                    <i>160 Calories</i>
+                    <h4>$17</h4>
+                    <input type="number" value="0">
+                </div>
+                <div class="food">
+                    <h3>JARDINIERE</h3>
+                    <img th:src="@{/img/7.jpg}" alt="Dinner 7">
+                    <i>63 Calories</i>
+                    <h4>$16</h4>
+                    <input type="number" value="0">
+                </div>
+                <div class="food">
+                    <h3>SOMON AU LEGUME</h3>
+                    <img th:src="@{/img/8.jpg}" alt="Dinner 8">
+                    <i>112 Calories</i>
+                    <h4>$20</h4>
+                    <input type="number" value="0">
+                </div>
+                <div class="food">
+                    <h3>SAUTE DE GESIERS</h3>
+                    <img th:src="@{/img/9.jpg}" alt="Dinner 9">
+                    <i>120 Calories</i>
+                    <h4>$10</h4>
+                    <input type="number" value="0">
+                </div>
+                <div class="food">
+                    <h3>POULET ROTI</h3>
+                    <img th:src="@{/img/10.jpg}" alt="Dinner 10">
+                    <i>250 Calories</i>
+                    <h4>$19</h4>
+                    <input type="number" value="0">
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Proccess Order" id="proccessOrder">
+   </form>
+    <!-- Scripts -->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

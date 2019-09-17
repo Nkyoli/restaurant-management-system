@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Registration Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Links-->
+        <link type="text/css" rel="stylesheet" th:href="@{/css/registrationPage.css}">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="registration">
+                <h2>Sign Up Now</h2>
+                <p id="duplicateUser" th:if="${registrationError != null}" th:text="${registrationError}"></p>
+                <form action="#" th:action="@{/customers/proccessRegistration}" th:object="${userDto}" method="post">
+                
+                	<div class="errorMessage" th:if="${#fields.hasErrors('username')}" th:class="'error'" th:errors="*{username}"></div>
+                    <input type="text" th:field="*{username}" placeholder="Username">
+                    
+                    <div class="errorMessage" th:if="${#fields.hasErrors('password')}" th:class="'error'" th:errors="*{password}"></div>
+                    <input type="password" th:field="*{password}" placeholder="Password">
+                    
+                    <div class="errorMessage" th:if="${#fields.hasErrors('matchingPassword')}" th:class="'error'" th:errors="*{matchingPassword}"></div>
+                    <input type="password" th:field="*{matchingPassword}" placeholder="Password Confirmation">
+                    
+                    <div class="errorMessage" th:if="${#fields.hasErrors('firstName')}" th:class="'error'" th:errors="*{firstName}"></div>
+                    <input type="text" th:field="*{firstName}" placeholder="First Name">
+                    
+                    <div class="errorMessage" th:if="${#fields.hasErrors('lastName')}" th:class="'error'" th:errors="*{lastName}"></div>
+                    <input type="text" th:field="*{lastName}" placeholder="Last Name">
+                    
+                    <div class="errorMessage" th:if="${#fields.hasErrors('email')}" th:class="'error'" th:errors="*{email}"></div>
+                    <input type="email" th:field="*{email}" placeholder="Email">
+                    
+                    <!-- Hidden input -->
+                    <input type="hidden" name="access" th:value="${#httpServletRequest.getParameter('value')}">
+                    
+                    <input type="submit" value="Register Now">
+                    <a th:href="@{/home}" class="signIn">Sign In</a>
+                </form>
+            </div>
+        </div>
+    <!-- Scripts -->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+
+</html>

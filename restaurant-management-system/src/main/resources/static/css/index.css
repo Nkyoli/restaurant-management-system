@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,600,700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(32, 65px);
+}
+
+h2 {
+    color: #6ab04c;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 4% auto;
+    font-weight: 300;
+    letter-spacing: 1%;
+    font-size: 200%;
+}
+
+h3 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10% auto;
+    font-weight: 400;
+    letter-spacing: 1%;
+    font-size: 150%;
+}
+
+#success {
+	text-align: center;
+	padding: 5%;
+	font-size: 120%;
+	color: green;
+}
+
+.firstSection {
+    grid-column: 1 / -1;
+    grid-row: 1 / 10;
+    background-image: url(../css/img/8.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+nav {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)); 
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav a {
+    text-decoration: none;
+    margin: auto 5%;
+    color: #6ab04c;
+    font-size: 150%;
+}
+
+nav a:hover:nth-child(2) {
+    border: 2px solid #6ab04c;
+    padding: .7%;
+    border-radius: 10px;
+    color: white; 
+}
+
+nav:first-child img {
+    width: 100px;
+    height: 100px;
+    margin: 10% auto;
+    border-radius: 50%;
+}
+
+.rightNav {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    grid-column: 4 / -1;
+    grid-row: 2 / -1;
+}
+
+.rightNav form {
+    margin: auto 5%;
+    border: 1px solid #e0ebe7;
+    border-radius: 5px;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form input {
+    width: 90%;
+    height: 20%;
+    border-radius: 10px;
+    font-size: 120%;
+    border: 2px solid rgba(106, 176, 76, 0.8);
+}
+
+form input[type="submit"] {
+    background-color: rgba(106, 176, 76, 0.8);
+    border: 2px solid white;
+    font-size: 150%;
+    color: white;
+    width: 50%;
+}
+
+.signUp {
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+    font-size: 150%;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 221, 0.8);
+}
+
+nav .signUp {
+    padding: .5%;
+    margin-right: 7%;
+    width: 10%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 150%;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 221, 0.8);
+}
+
+.signUp:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(0, 0, 221, 0.8);
+    color: rgba(0, 0, 221, 0.8);
+}
+
+form input[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #6ab04c; 
+    border: 2px solid rgba(106, 176, 76, 0.8);
+}
+
+.errorMessage {
+	text-align: center;
+	padding: 5%;
+	color: red;
+	font-size: 120%;
+}
+
+.logoutMessage {
+	text-align: center;
+	padding: 5%;
+	color: green;
+	font-size: 120%;
+}
+
+.secondSection {
+    grid-column: 1 / -1;
+    grid-row: 10 / 20; 
+    background-color: #e6e5e5;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h4 {
+    text-align: center;
+    padding: 2%;
+    color: white;
+    background-color: rgba(106, 176, 76, 0.8);
+    font-weight: 300;
+    font-size: 250%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
+}
+
+h5 {
+    margin: 1% auto;
+    padding: 5%;
+    color: rgba(106, 176, 76, 0.8);
+    font-size: 200%;
+    font-weight: 200;
+    background-color: #f4f4f4;
+}
+
+.premium,
+.pro,
+.standard,
+.guest {
+    width: 20%;
+}
+
+.check ion-icon {
+    color: rgba(106, 176, 76, 1);
+    margin: 6% 2% 0 3%;
+}
+
+.uncheck ion-icon {
+    color: red;
+    margin: 6% 2% 0 3%;
+}
+
+.uncheck {
+    text-decoration: line-through;
+}
+
+.orderBtn {
+    background-color: #f4f4f4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.orderBtn a {
+    text-decoration: none;
+    margin: 7% auto;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    width: 70%;
+    padding: 5%;
+    border-radius: 100px;
+    border: 1px solid #9f9d9d;
+    background-color: rgba(106, 176, 76, 1);
+}
+
+.orderBtn a:hover {
+    color: rgba(106, 176, 76, 1);
+    border: 1px solid #777777;
+    background-color: white;
+}
+
+.premium ul,
+.pro ul,
+.standard ul,
+.guest ul {
+    list-style: none;
+    background-color: white;
+    margin-bottom: 1%;
+    padding: 3%;
+}
+
+.month,
+.decimal {
+    font-size: 50%;
+}
+
+.thirdSection {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    grid-column: 1 / -1;
+    grid-row: 20 / 30;
+}
+
+.thirdSection img {
+    width: 24%;
+    height: 35%;
+    margin: .3%; 
+    border: 1px solid #6ab04c;
+
+}
+
+.fourthSection {
+    grid-column: 1 / -1;
+    grid-row: 30 / -1; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.authorInfo {
+    width: 40%;
+    margin: 5%;
+}
+
+.authorInfo p {
+    font-size: 150%;
+    margin-left: 5%;
+    color: white;
+    font-weight: 200;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.author img {
+    margin: 4%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.author i {
+    width: 60%;
+    color: white;
+    font-weight: 200;
+}
+
+.social {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social a {
+    color: white;
+    font-size: 250%;
+}

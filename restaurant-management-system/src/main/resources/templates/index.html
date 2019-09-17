@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>French Restaurant</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Links-->
+        <link type="text/css" rel="stylesheet" th:href="@{/css/index.css}">
+    </head>
+
+    <body>
+        <section class="firstSection">
+            <nav>
+                <a href="#"><img th:src="@{/img/logo.PNG}" alt="Logo"></a>
+                <a href="#">Order Now</a>
+                <a href="#secondSection" class="signUp">Sign up</a>
+            </nav>
+            <div class="rightNav">
+                <h3>French Restaurant</h3>
+                <p id="success" th:if="${registrationSuccess != null}" th:text="${registrationSuccess}"></p>
+                <form action="#" th:action="@{/login}" method="post">
+                    <input type="text" name="username" placeholder=" Username">
+                    <input type="password" name="password" placeholder=" Password">
+                    <input type="submit" value="Sign In">
+                </form>
+                
+                <!-- Check for login error -->
+				<div th:if="${param.error != null}">						            
+					<div class="errorMessage">
+						Invalid username or password!
+					</div>
+				</div>
+			
+				<!-- Check for logout -->
+				<div th:if="${param.logout != null}">	 
+					<div class="logoutMessage">
+						You have been logged out.
+					</div>
+			   	</div>
+            </div>
+        </section>
+        
+        <section class="secondSection" id="secondSection">
+            <h2> 😍 - The best offers of the market - 😍</h2>
+            <div class="offers">
+                <div class="premium">
+                    <h4>Premium</h4>
+                    <h5>$499<sup class="decimal">99</sup><span class="month"> / Month</span></h5>
+                    <ul>
+                        <li class="check"><ion-icon name="checkmark-circle-outline"></ion-icon>Free home delivery</li>
+                        <li class="check"><ion-icon name="checkmark-circle-outline"></ion-icon>Free work delivery</li>
+                        <li class="check"><ion-icon name="checkmark-circle-outline"></ion-icon>Order 24/7</li>
+                        <li class="check"><ion-icon name="checkmark-circle-outline"></ion-icon>7 breakfast monthly</li>
+                        <li class="check"><ion-icon name="checkmark-circle-outline"></ion-icon>7 dinner monthly</li>
+                    </ul>
+                    <div class="orderBtn"><a th:href="@{/customers/showRegistrationForm?value=Premium}">Sign Up Now</a></div>
+                </div>
+                <div class="pro">
+                    <h4>Pro</h4>
+                    <h5>$299<sup class="decimal">99</sup><span class="month"> / Month</span></h5>
+                    <ul>
+                        <li class="check"><ion-icon name="checkmark-circle-outline"></ion-icon>Free home delivery</li>
+                        <li class="check"><ion-icon name="checkmark-circle-outline"></ion-icon>Free work delivery</li>
+                        <li class="check"><ion-icon name="checkmark-circle-outline"></ion-icon>Order 24/7</li>
+                        <li class="check"><ion-icon name="checkmark-circle-outline"></ion-icon>7 breakfast monthly</li>
+                        <li class="uncheck"><ion-icon name="close-circle-outline"></ion-icon>7 dinner monthly</li>
+                    </ul>
+                    <div class="orderBtn"><a th:href="@{/customers/showRegistrationForm?value=Pro}">Sign Up Now</a></div>
+                </div>
+                <div class="standard">
+                    <h4>Standard</h4>
+                    <h5>$199<sup class="decimal">99</sup><span class="month"> / Month</span></h5>
+                    <ul>
+                        <li class="check"><ion-icon name="checkmark-circle-outline"></ion-icon>Free home delivery</li>
+                        <li class="check"><ion-icon name="checkmark-circle-outline"></ion-icon>Free work delivery</li>
+                        <li class="check"><ion-icon name="checkmark-circle-outline"></ion-icon>Order 24/7</li>
+                        <li  class="uncheck"><ion-icon name="close-circle-outline"></ion-icon>7 breakfast monthly</li>
+                        <li  class="uncheck"><ion-icon name="close-circle-outline"></ion-icon>7 dinner monthly</li>
+                    </ul>
+                    <div class="orderBtn"><a th:href="@{/customers/showRegistrationForm?value=Standard}">Sign Up Now</a></div>
+                </div>
+                <div class="guest">
+                    <h4>Guest</h4>
+                    <h5>$0<span class="month"> / Month</span></h5>
+                    <ul>
+                        <li  class="uncheck"><ion-icon name="close-circle-outline"></ion-icon>Free home delivery</li>
+                        <li  class="uncheck"><ion-icon name="close-circle-outline"></ion-icon>Free work delivery</li>
+                        <li  class="uncheck"><ion-icon name="close-circle-outline"></ion-icon>Order 24/7</li>
+                        <li  class="uncheck"><ion-icon name="close-circle-outline"></ion-icon>7 breakfast monthly</li>
+                        <li  class="uncheck"><ion-icon name="close-circle-outline"></ion-icon>7 dinner 1 monthly</li>
+                    </ul>
+                    <div class="orderBtn"><a th:href="@{/customers/showRegistrationForm?value=Guest}">Order Now</a></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="thirdSection">
+            <h2> 😍 - What you will eat - 😍</h2>
+            <img th:src="@{/img/1.jpg}" alt="First Plate">
+            <img th:src="@{/img/2.jpg}" alt="Second Plate">
+            <img th:src="@{/img/3.jpg}" alt="Third Plate">
+            <img th:src="@{/img/4.jpg}" alt="Fourth Plate">
+            <img th:src="@{/img/5.jpg}" alt="Fifth Plate">
+            <img th:src="@{/img/6.jpg}" alt="Sixth Plate">
+            <img th:src="@{/img/7.jpg}" alt="Seventh Plate">
+            <img th:src="@{/img/8.jpg}" alt="Eighth Plate">
+        </section>
+        
+        <section class="fourthSection">
+            <div class="authorInfo">
+                <p>Designed by:</p>
+                <div class="author">
+                    <img th:src="@{/img/author.jpg}" alt="Lionel Youmbi">
+                    <i>Lionel N. Youmbi</i>
+                </div>
+            </div>
+            <div class="social">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-googleplus"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-snapchat"></ion-icon></a>
+            </div>
+        </section>
+    
+    <!-- Scripts -->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+
+</html>

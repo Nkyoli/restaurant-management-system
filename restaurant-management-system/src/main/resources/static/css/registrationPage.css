@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,600,700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 100px);
+    background-image: url(../css/img/9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.registration {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); 
+    grid-column: 8 / -1;
+    grid-row: 1 / -1;
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 4% auto;
+    font-weight: 300;
+    letter-spacing: 1%;
+    font-size: 250%;
+}
+
+p {
+	text-align: center;
+	font-size: 150%;
+}
+
+#duplicateUser {
+	color: red;	
+}
+
+form {
+    display: flex;
+    color: #ff0000;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form input {
+    width: 70%;
+    height: 20%;
+    margin: 1% auto;
+    padding: 1%;
+    border-radius: 10px;
+    font-size: 150%;
+    border: 2px solid rgba(106, 176, 76, 0.8);
+}
+
+form input[type="submit"] {
+    background-color: rgba(106, 176, 76, 0.8);
+    border: 2px solid white;
+    margin: 2% auto;
+    font-size: 150%;
+    color: white;
+    width: 50%;
+}
+
+.signIn {
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+    font-size: 150%;
+    border-radius: 10px;
+    margin: 1% auto;
+    padding: 1%;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 221, 0.8);
+}
+
+.signIn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(0, 0, 221, 0.8);
+    color: rgba(0, 0, 221, 0.8);
+}
+
+form input[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #6ab04c; 
+    border: 2px solid rgba(106, 176, 76, 0.8);
+}
+
+.errorMessage {
+	font-size: 60%;
+}
+
