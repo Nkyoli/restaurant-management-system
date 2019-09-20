@@ -1,0 +1,119 @@
+[{
+	"id": "menu1",
+	"name": "PAIN AUX OEUFS",
+	"price": 9,
+	"imgLocation": "/img/b1.jpg",
+	"quantity": 0
+},
+
+{
+	"id": "menu2",
+	"name": "CREPES AU MIEL",
+	"price": 10,
+	"imgLocation": "/img/b2.jpg",
+	"quantity": 0
+},
+
+{
+	"id": "menu3",
+	"name": "SALADE SIMPLE",
+	"price": 11,
+	"imgLocation": "/img/b3.jpg",
+	"quantity": 0
+},
+
+{
+	"id": "menu4",
+	"name": "SALADE DE FRUITS",
+	"price": 7,
+	"imgLocation": "/img/b4.jpg",
+	"quantity": 0
+},
+
+{
+	"id": "menu5",
+	"name": "TOMATES AVOCAT",
+	"price": 10,
+	"imgLocation": "/img/b2.jpg",
+	"quantity": 0
+},
+
+{
+	"id": "menu6",
+	"name": "TARTE DE LEGUMES",
+	"price": 15,
+	"imgLocation": "/img/1.jpg",
+	"quantity": 0
+},
+
+{
+	"id": "menu7",
+	"name": "SOUPE DE RIZ",
+	"price": 18,
+	"imgLocation": "/img/2.jpg",
+	"quantity": 0
+},
+
+{
+	"id": "menu8",
+	"name": "MINI PIZZA",
+	"price": 12,
+	"imgLocation": "/img/3.jpg",
+	"quantity": 0
+},
+
+{
+	"id": "menu9",
+	"name": "SALADE DE POULET",
+	"price": 21,
+	"imgLocation": "/img/4.jpg",
+	"quantity": 0
+},
+
+{
+	"id": "menu10",
+	"name": "OEUFS FRIS",
+	"price": 13,
+	"imgLocation": "/img/5.jpg",
+	"quantity": 0
+},
+
+{
+	"id": "menu11",
+	"name": "PILI PILI",
+	"price": 17,
+	"imgLocation": "/img/6.jpg",
+	"quantity": 0
+},
+
+{
+	"id": "menu12",
+	"name": "JARDINIERE",
+	"price": 16,
+	"imgLocation": "/img/7.jpg",
+	"quantity": 0
+},
+
+{
+	"id": "menu13",
+	"name": "SOMON AU LEGUME",
+	"price": 20,
+	"imgLocation": "/img/8.jpg",
+	"quantity": 0
+},
+
+{
+	"id": "menu14",
+	"name": "SAUTE DE GESIERS",
+	"price": 10,
+	"imgLocation": "/img/9.jpg",
+	"quantity": 0
+},
+
+{
+	"id": "menu15",
+	"name": "POULET ROUTI",
+	"price": 19,
+	"imgLocation": "/img/10.jpg",
+	"quantity": 0
+}]

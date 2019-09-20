@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,600,700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    color: #6ab04c;
+    font-weight: 400;
+    padding: 2% 2%;
+    letter-spacing: 2%;
+    font-size: 200%;
+}
+
+h3 {
+    width: 105%;
+    text-align: center;
+    color: #6ab04c;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 2% 2%;
+    letter-spacing: 2%;
+    font-size: 150%;
+}
+
+nav  span {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2% 5% 2% 5%;
+    font-weight: 300;
+    letter-spacing: 1%;
+    font-size: 300%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 500%;
+    margin: 2% 0 2% 15%;
+}
+
+nav {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thankCustomer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87)); 
+    padding-top: 1%;
+    font-size: 200%;
+    font-weight: 200;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thankCustomer span {
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+
+.thankCustomer form {
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+
+.thankCustomer input[type="submit"] {
+    padding: 6% 10%;
+    color: white;
+    font-size: 90%;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #6ab04c;
+}
+
+.thankCustomer input[type="submit"]:hover {
+    color: #6ab04c;
+    border: 2px solid #6ab04c;
+    background-color: white;
+}
+
+.orders {
+    background-color: #efefef;
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderImg img {
+    margin: 3% auto;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.order span {
+    width: 30%;
+    text-align: center;
+    color: #6ab04c;
+    font-weight: 200;
+    padding: 2% 3%;
+    letter-spacing: 2%;
+    font-size: 200%;
+}
+
+hr {
+    width: 65%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.total {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.total span {
+    width: 20%;
+    text-align: center;
+    color: #6ab04c;
+    font-weight: 300;
+    padding: 3% auto;
+    letter-spacing: 1%;
+    font-size: 350%;
+}
+
+.checkOut {
+    width: 20%;
+    margin: 2% auto;
+    height: 70px;
+    padding: 1% 2%;
+    color: white;
+    font-size: 200%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #6ab04c;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkOut:hover {
+    color: #6ab04c;
+    border: 2px solid #6ab04c;
+    background-color: white;
+}
+

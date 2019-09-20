@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Process Order</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Links -->
+<link rel="stylesheet" type="text/css"
+	th:href="@{/css/processOrder.css}">
+</head>
+<body>
+	<nav>
+		<a href="#" id="userImg"><ion-icon name="contact"></ion-icon></a> <span
+			th:text="${user.access}"></span>
+	</nav>
+
+	<div class="thankCustomer">
+		<span>Thank you, <strong th:text="${user.firstName}"></strong>😊😊</span>
+		<form method="get" action="/logout">
+			<input type="submit" value="Logout">
+		</form>
+	</div>
+	<div th:if="${customerOrder.size() == 0}">
+		<h2>Sorry <strong th:text="${user.firstName}"></strong>, you did not make any order 😌😌</h2>
+		<a th:href="@{/loginPage}" class="checkOut">Order Now</a>
+	</div>
+	<div th:unless="${customerOrder.size() == 0}">
+		<div class="orders" th:each="order : ${customerOrder}">
+			<div class="order">
+				<div class="orderImg">
+					<h3 th:text="${order.name}"></h3>
+					<img th:src="@{__${order.imgLocation}__}" alt="Food">
+				</div>
+				<span><strong th:text="${order.quantity}"></strong> X $<strong th:text="${order.price}"></strong> = $<strong th:text="${order.totalPrice}"></strong> </span>
+			</div>
+			<hr>
+		</div>
+		<div class="total">
+			<span>TOTAL</span><span>$<strong th:text="${finalTotal}"></strong></span>
+		</div>
+		<a th:href="@{/loginPage}" class="checkOut">Check Out</a>
+
+	</div>
+	<!-- Scripts -->
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
