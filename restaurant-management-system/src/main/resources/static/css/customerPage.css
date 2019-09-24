@@ -20,6 +20,7 @@ h2 {
 
 h3 {
     color: #6ab04c;
+    text-align: center;
     text-transform: uppercase;
     margin: 2% auto;
     font-weight: 400;
@@ -125,22 +126,22 @@ nav a:nth-child(3):hover {
     align-items: center;
 }
 
-.food {
+.meal {
 	margin: 20px auto;
 	display: flex;
-    flex: 0 0 20%;
+    flex: 0 0 24%;
     flex-direction: column;
     justify-content: space-between;
     align-items:center;
 }
 
-.food img {
-    width: 200px;
-    height: auto;
+.meal img {
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
 }
 
-.food i {
+.meal i {
     margin: 3% auto;
 }
 

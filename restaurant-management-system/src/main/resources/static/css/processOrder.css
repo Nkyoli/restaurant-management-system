@@ -37,11 +37,11 @@ nav  span {
     font-size: 300%;
 }
 
-nav a {
+#userImg {
     text-decoration: none;
     color: white;
-    font-size: 500%;
-    margin: 2% 0 2% 15%;
+    font-size: 600%;
+    margin: 1% 0 1% 1%;
 }
 
 nav {
@@ -115,7 +115,7 @@ nav {
 }
 
 hr {
-    width: 65%;
+    width: 50%;
     margin: auto;
     border: 1px solid black;
 }
