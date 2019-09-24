@@ -3,7 +3,7 @@ A spring boot web application for restaurants that can be used to process custom
 ## Created with: 
 Spring Boot/Hibernate/MySQL/JPA/Java 8/Maven/HTML5/CSS3/JavaScript/JQuery
 ## Menu table:
-You can change the Menu table and have different meals, but you need to have the same columns, also the meals' images should be located at /static/img within the project.
+You can change the Menu table and have different meals, also the meals' images should be located at /static/img within the project.
 ![Menu Table](https://github.com/Nkyoli/restaurant-management-system/blob/master/img/menuTable.JPG)
 ## Home Page:
 The customer can sign choose his/her access level and sign up according to the access level.
